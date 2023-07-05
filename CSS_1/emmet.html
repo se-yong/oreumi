@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 자식요소 -->
+    div>ul>li
+
+    <!-- 형제요소 -->
+    <div>
+        <p></p>
+        <span></span>
+    </div>
+
+    <!-- 상위 계층으로 이동 -->
+    <div>
+        <ul>
+            <li></li>
+        </ul>
+        <p></p>
+        <a href=""></a>
+    </div>
+    <!-- 반복  -->
+    <div>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <!-- 그룹 -->
+    div>ul>li+footer
+    <div>
+        <ul>
+            <li></li>
+            <footer></footer>
+        </ul>
+    </div>
+    
+    div>(ul>li)+footer
+    <div>
+        <ul>
+            <li></li>
+        </ul>
+        <footer></footer>
+    </div>
+
+</body>
+</html>
+
+## 행거로 가로 로우 -> row
+## 열쇠로 세로 컬럼 -> coulum
+## 행가로 열세콜

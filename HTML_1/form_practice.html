@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>설문조사</title>
+</head>
+
+<body>
+    <form action="./result.html" method="get">
+        <fieldset>
+            <legend>설문 조사</legend>
+            <div>
+                <label for="username"> 이름:</label>
+                <input type="text" name="username" placeholder="이름" required>
+            </div>
+            <div>
+              <label for="age">나이:</label>
+              <input type="number" name="age" min="0" max="100" step="10" required>
+            </div>
+            <div>
+                <label for="gender">성별:</label>
+                <input type="radio" name="gender" value="male" required>
+                <label for="male">남성</label>
+                <input type="radio" name="gender" value="female" required>
+                <label for="female">여성</label>
+            </div>
+            <label for="summary">간단한 자기소개:</label>
+            <div>
+                <textarea name="summary" placeholder="내용 입력" rows="10" cols="30"></textarea>
+            </div>
+            <div>
+                <label for="hobby">취미</label>
+                <select name="hobby" required>
+                    <option value="">선택하세요</option>
+                    <option value="1">독서</option>
+                    <option value="2">컴퓨터 게임</option>
+                    <option value="3">코딩</option>
+                    <option value="4">운동</option>
+                    <option value="5">음악 감상</option>
+                    <option value="6">기타</option>
+                </select>
+            </div>
+            <div>
+              <label for="favorite food">좋아하는 음식</label><br>
+                <input type="checkbox" name="type_2_1" value="Korean food">
+                <label for="type_2_1">한식</label>
+                <input type="checkbox" name="type_2_2" value="Chinese food">
+                <label for="type_2_2">양식</label>
+                <input type="checkbox" name="type_2_3" value="Western food">
+                <label for="type_2_3">중식</label>
+                <input type="checkbox" name="type_2_4" value="Japanese food">
+                <label for="type_2_3">일식</label>
+            </div>
+            <br>
+            <div>
+                <button type="submit">제출</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>

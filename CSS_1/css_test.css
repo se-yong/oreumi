@@ -1,0 +1,25 @@
+/* 스타일 시트: 국토면적 테이블 관련 스타일
+update: 23.6.21
+*/
+
+.first {
+    color: blue;
+    font-style: 24p;
+}
+
+#second {
+  color: red;
+  font-style: 24p;
+}
+
+/* 그룹 선택자 */
+p, span {
+  color: green;
+  font-size: 24p;
+}
+
+/* 자식 선택자 */
+div>p {
+  color: blue;
+  font-style: 24p;
+}
