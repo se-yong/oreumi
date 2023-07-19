@@ -34,7 +34,6 @@ def solution(queue1, queue2):
     return answer
 
 
-
 # from collections import deque
 
 # def solution(queue1, queue2):
