@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원가입</title>
+</head>
+<body>
+  <h1>회원가입</h1>
+  <form id="signup-form" method="post">
+    <label for="username">이름:</label>
+    <input type="text" id="username" name="username" required>
+    <br>
+
+    <label for="email">이메일:</label>
+    <input type="email" id="email" name="email" required>
+    <br>
+    <br>
+    <input type="submit" value="가입하기">
+  </form>
+  <script>
+    const form = document.getElementById('signup-form');
+
+    form.addEventListener('submit', function(event) {
+      event.preventDefault(); // 폼 제출 방지
+      const username = document.getElementById('username').value;
+
+      const message = document.createElement('p');
+      message.innerText = "회원가입이 완료되었습니다.";
+      document.body.appendChild(message);
+    });
+  </script>
+</body>
+</html>
